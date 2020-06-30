@@ -488,123 +488,18 @@ a.menu_toggler{
 	font-size:26px;
 	color:#999;
 }
-.cleancode_block .tab-pane {
-	display:block;
-	height:0;
-	transform:translateY(-50%);
-	-o-transform:translateY(-50%);
-	-ms-transform:translateY(-50%);
-	-webkit-transform:translateY(-50%);
-	transition: all 0.5s ease-in-out; 
-	-webkit-transition: all 0.5s ease-in-out;
-}
-.cleancode_block .tab-pane.active {
-	height:auto;
-	transform:translateY(0);
-	-o-transform:translateY(0);
-	-ms-transform:translateY(0);
-	-webkit-transform:translateY(0);
-}
 
-.ie .cleancode_block .tab-pane {display:none;}
-.ie .cleancode_block .tab-pane.active {display:block;}
-
-
-.cleancode_block .nav-tabs {
-	margin:0 -15px;
-	border:0;
-}
-.cleancode_block .nav-tabs li {
-	margin:0;
-	padding:0 15px;
-}
-.cleancode_block .nav-tabs li a {
-	width:170px;
-	height:170px;
-	margin:0;
-	padding:54px 0 0;
-	text-align:center;
-	border:0 !important;
-	border-radius:0;
-	transition: background-color 0.3s ease-in-out;
-	-webkit-transition: background-color 0.3s ease-in-out;
-}
-.cleancode_block .nav-tabs li a i {
-	display:block;
-	width:60px;
-	height:60px;
-	margin:0 auto;
-	background-repeat:no-repeat;
-	background-position:0 -60px;
-	background-size:100% auto;
-	-webkit-background-size:100% auto;
-	transition: transform 0.2s ease-in-out; 
-	-webkit-transition: -webkit-transform 0.2s ease-in-out;
-}
-.cleancode_block .nav-tabs li a.i1 i {background-image:url(../images/i1.png);}
-.cleancode_block .nav-tabs li a.i2 i {background-image:url(../images/i2.png);}
-.cleancode_block .nav-tabs li a.i3 i {background-image:url(../images/i3.png);}
-.cleancode_block .nav-tabs li a.i4 i {background-image:url(../images/i4.png);}
-.cleancode_block .nav-tabs li a.i5 i {background-image:url(../images/i5.png);}
-.cleancode_block .nav-tabs li a.i6 i {background-image:url(../images/i6.png);}
-
-.nav-tabs li a:hover,
-.nav-tabs li a:focus {
-	background-color:transparent;
-}
-.nav-tabs li.active a,
-.nav-tabs li.active a:hover,
-.nav-tabs li.active a:focus {
-	background-color:#fff;
-}
-
-.nav-tabs li a:hover i {
-	background-position:0 -120px;
-	transform:translateY(-10px);
-	-o-transform:translateY(-10px);
-	-ms-transform:translateY(-10px);
-	-webkit-transform:translateY(-10px);
-}
-.nav-tabs li.active a i {
-	background-position:0 0;
-	transform:translateY(-16px);
-	-o-transform:translateY(-16px);
-	-ms-transform:translateY(-16px);
-	-webkit-transform:translateY(-16px);
-}
-
-.cleancode_block .nav-tabs li a span {
-	display:block;
-	font-family: 'Roboto', sans-serif;
-	font-weight:400;
-	line-height:20px;
-	font-size:20px;
-	color:#333;
-	opacity:0;
-	transform:translateY(-30px);
-	-o-transform:translateY(-30px);
-	-ms-transform:translateY(-30px);
-	-webkit-transform:translateY(-30px);
-	transition: all 0.5s ease-in-out; 
-	-webkit-transition: all 0.5s ease-in-out;
-}
-.nav-tabs li.active a span {
-	opacity:1;
-	transform:translateY(-6px);
-	-o-transform:translateY(-6px);
-	-ms-transform:translateY(-6px);
-	-webkit-transform:translateY(-6px);
-}
 
 
 /* __________ Multi Purpose __________ */
 .purpose_block {padding:72px 0 0;}
 
 .purpose_block p {
+	margin-left: 100px
 	margin-bottom:26px;
 	font-weight:300;
 	line-height:26px;
-	font-size:17px;
+	font-size:25px;
 	color:#666;
 }
 .purpose_block .btn {margin-top:30px; margin-right:16px;}
@@ -1159,26 +1054,27 @@ footer h4 {color:#fff;}
 /*-----------------------------------------------------------------------------------*/
 /*	SOCIAL BUTTONS
 /*-----------------------------------------------------------------------------------*/
-.social li {
+.social {
 	display:inline-block;
 	margin:0 7px 10px 0;
 }
-.social li a {
-	display:block;
-	width:50px;
-	height:50px;
-	border:1px solid white;
-	text-align:center;
-	line-height:46px;
-	font-size:23px;
-	color:white;
+.social > a {
+	display: inline-block;
+	margin: 0 7px 10px 0;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 46px;
+	font-size: 23px;
+	color: #ccc;
 }
-.social li a:hover {
-	color:yellow;
-	border-color:yellow;
+.social > a:hover {
+	color: white;
+	border-color: white;
+	font-size: 3em;
+	transition: 0.5s ease-out
 }
-
-
 
 
 
@@ -2063,3 +1959,21 @@ input[type="color"]:focus {
 
 
 
+/* ========================================= TEXT ANIMATION CSS CODE START =============================== */
+
+.container-text-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
+
+
+/* ========================================= TEXT ANIMATION CSS CODE END =============================== */
