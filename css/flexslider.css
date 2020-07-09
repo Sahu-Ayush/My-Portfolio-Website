@@ -68,6 +68,7 @@ html[xmlns] .slides {display: block;}
 	margin:0 auto;
 }
 
+/*
 .flexslider.top_slider .flex-direction-nav li a {
 	position:absolute;
 	z-index:300;
@@ -79,6 +80,7 @@ html[xmlns] .slides {display: block;}
 	text-align:center;
 	background-color:#fff;
 }
+*/
 .flexslider.top_slider .flex-direction-nav li a:hover {background-color:#333;}
 .flexslider.top_slider .flex-direction-nav li a.flex-prev {left:0;}
 .flexslider.top_slider .flex-direction-nav li a.flex-next {left:71px;}
